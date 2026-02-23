@@ -15,14 +15,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Campground"
         tools:targetApi="31">
-        <activity android:name="com.codepath.lab6.DetailActivity"
+        <activity android:name=".DetailActivity"
             android:exported="true" />
         <activity
-            android:name="com.codepath.lab6.MainActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
