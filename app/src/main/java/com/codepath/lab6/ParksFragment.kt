@@ -37,7 +37,7 @@ class ParksFragment : Fragment() {
                     )
                     parsedJson.data?.let{list->
                         parks.addAll(list)
-                        parksAdapter.notifyItemInserted(list.size)
+                        parksAdapter.notifyDataSetChanged()
                     }
                 } catch (e: JSONException){
                     Log.e(TAG, "Exception: $e")
